@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal" android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+<LinearLayout
+    android:layout_width="0dp"
+    android:layout_height="wrap_content"
+    android:layout_weight="1"
+    android:orientation="vertical"
+    android:paddingTop="8dp">
+    <TextView
+        android:id="@+id/browse_enterprise"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="16dp"
+        android:text="小米公司"
+        android:textColor="@color/colorPrimaryText"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/browse_datetime"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="16dp"
+        android:text="2016-9-01"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/browse_addr"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="16dp"
+        android:text=" 西工大"
+        android:textSize="14sp" />
+</LinearLayout>
+    <TextView
+        android:id="@+id/tv_access_time"
+        android:drawableLeft="@drawable/ic_access_time_red_500_18dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="09-01 12:34"
+        android:layout_marginRight="16dp"
+        android:layout_gravity="center_vertical"/>
+</LinearLayout>

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+
+    tools:context="com.hk.goffer.ui.activity.SearchActivity">
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar_search"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="@color/colorPrimary"
+        app:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+        app:navigationIcon="@drawable/ic_chevron_left_white_36dp"
+        >
+
+        <EditText
+            android:singleLine="true"
+            android:id="@+id/edit_keywords"
+            android:layout_gravity="center_vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="55dp"
+            android:padding="5dp"
+            android:hint="搜索关键字"
+            android:textColorHint="@color/colorSecondaryText"
+            android:textSize="14sp"
+            android:drawableLeft="@drawable/ic_search_grey_400_24dp"
+            android:background="@drawable/border_radius"
+            android:textColor="@color/colorPrimaryText"
+            android:imeOptions="actionSearch"
+            />
+        <Button
+            android:id="@+id/btn_search"
+            android:background="?attr/selectableItemBackground"
+            android:layout_width="55dp"
+            android:layout_height="match_parent"
+            android:textColor="#fff"
+            android:textSize="18sp"
+            android:text="搜索"
+            android:gravity="center"
+            android:layout_gravity="end|end|center_vertical"
+            />
+    </android.support.v7.widget.Toolbar>
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/search_content"/>
+</LinearLayout>

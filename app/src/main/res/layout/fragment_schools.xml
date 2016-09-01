@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:visibility="gone"
+        android:id="@+id/ll_school_header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_header_school"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorAccent"
+            android:drawableLeft="@drawable/ic_school_white_18dp"
+            android:drawablePadding="8dp"
+            android:paddingBottom="3dp"
+            android:paddingLeft="16dp"
+            android:paddingTop="3dp"
+            android:text="西安工业大学"
+            android:textColor="#fff"
+            android:textSize="14sp" />
+
+        <android.support.v4.widget.SwipeRefreshLayout
+            android:id="@+id/refresh_school"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ListView
+                android:id="@+id/lv_offer_school"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:cacheColorHint="@android:color/transparent" />
+        </android.support.v4.widget.SwipeRefreshLayout>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/school_empty_tips"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="点击右下角按钮，选择学校"
+        android:textColor="@color/colorSecondaryText"
+        android:textSize="20sp"
+        android:layout_centerInParent="true"
+        android:drawableTop="@drawable/ic_bug_report_grey_300_48dp"/>
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fab_school_picker"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:src="@drawable/ic_school_white_18dp"
+        app:elevation="5dp"
+        app:fabSize="mini" />
+</RelativeLayout>

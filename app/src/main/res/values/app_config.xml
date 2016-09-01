@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="url_popular">http://222.25.4.10:3000/api/v1/offers/all</string>
+</resources>
